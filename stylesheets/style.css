@@ -1,0 +1,109 @@
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial.woff');
+}
+
+body {
+    font-family: 'Arial';
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+    
+  
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/*ЗАВОД */
+.zavod {
+    grid-column: 1 / 13;
+    grid-row: 1;
+    overflow: hidden;
+}
+
+.zavod h1 {
+    font-size: 48px;
+    overflow-wrap: none;
+    margin: 0;
+    white-space: nowrap;
+    animation: text-infinite 5s linear infinite;
+}
+
+@keyframes text-infinite {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
+/*ЗАВОД */
+
+.intro__title { 
+    
+    font-size: 64px;
+    max-width: 754px;
+    color: #ffffff;
+    margin: 0;
+
+
+}
+
+
+.gradient1 { 
+    margin: 0;
+    font-size: 64px;
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(72, 182, 255, 0.5) 20%, rgba(0, 217, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(112, 165, 250) 61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: wave 2000ms ease alternate infinite;
+    transition: all 0.4s ease;
+    
+
+}
+
+.intro__content {
+    height: 805px;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes wave {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50vw 10px;
+    }
+  }
+
+/*футер */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px 0 0 0;
+    align-items: center;
+
+}
+
+.footer h1 {
+    font-family: 'Arial';
+    font-size: 24px;
+    color: #ffffff;
+}
+/*футер */
